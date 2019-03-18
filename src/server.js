@@ -11,12 +11,12 @@ app.get('/', (req, res) => {
       entryName: 'main',
       AppComponent: <Component />,
       title: 'lalal',
-      canonical: 'http://y.y:7774/',
-      headComponents: null
+      canonical: 'http://127.0.0.1:7774/',
+      headComponents: <script async custom-element='amp-bind' src='https://cdn.ampproject.org/v0/amp-bind-0.1.js' />
     })
   )
 })
 
 app.listen(7774, () => {
-  console.log('asd')
+  console.log('Server started on port 7774.')
 })
