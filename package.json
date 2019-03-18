@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p",
+    "lint": "standard --fix"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,12 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "nodemon": "^1.18.10"
+    "amp-react-renderer-plugin": "^0.1.0",
+    "babel-loader": "^8.0.5",
+    "mini-css-extract-plugin": "^0.5.0",
+    "nodemon": "^1.18.10",
+    "standard": "^12.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
